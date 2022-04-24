@@ -10,4 +10,5 @@
 double xa = 7, xb = 1,
        ya = -5, yb = -1,
         za = 0, zb = 9;
+
 Console.WriteLine("lenght " + Math.Round(threed(xa, xb, ya, yb, za, zb), 2));
