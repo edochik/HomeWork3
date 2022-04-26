@@ -1,14 +1,5 @@
-﻿double threed(double xa, double xb, double ya, double yb, double za, double zb)
-{
-    double threedX = xa - xb;
-    double threedY = ya - yb;
-    double threedZ = za - zb;
-    double threeXYZ = Math.Sqrt((threedX * threedX) + (threedY * threedY) + (threedZ * threedZ));
-    return threeXYZ;
-}
-
-double xa = 7, xb = 1,
-       ya = -5, yb = -1,
-        za = 0, zb = 9;
-
-Console.WriteLine("lenght " + Math.Round(threed(xa, xb, ya, yb, za, zb), 2));
+﻿// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 4, 9. 
+// 5 -> 1, 8, 27, 64, 125
+// 3 -> 1, 8, 27 
+// 5 -> 1, 8, 27, 64, 125
