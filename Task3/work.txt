@@ -1,0 +1,50 @@
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
+// 5 -> 1, 4, 9, 16, 25.
+// 2 -> 1,4
+
+int n = 5;
+
+void Method(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+
+        Console.Write($" {i * i}");
+    }
+    Console.WriteLine();
+}
+
+void Method2(int n)
+{
+    int res = 0;
+    int resv = 0;
+    for (int i = 0; i < n; i++)
+    {
+        res = res + n - 4;
+        resv = res * res;
+        Console.Write(" " + resv);
+    }
+    Console.WriteLine();
+}
+Method(n);
+Method2(n);
+
+/*
+int a = (n - 4) * (n - 4);
+int b = (n - 3) * (n - 3);
+int c = (n - 2) * (n - 2);
+int d = (n - 1) * (n - 1);
+int f = (n - 0) * (n - 0);
+Console.WriteLine(a + " " + b + " " + c + " " + d + " " + f);
+*/
+/*
+int res = 0;
+int resv = 0;
+for (int i = 0; i < n; i++)
+{
+    res = res + n - 4;
+    resv = res * res;
+    Console.Write(" " + resv);
+}
+Console.WriteLine();
+*/

@@ -2,49 +2,17 @@
 // 5 -> 1, 4, 9, 16, 25.
 // 2 -> 1,4
 
+int n = 5;
 
-
-int[] array = { 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 };
-
-
-
-void FillArray(int[] collection)
+void Method(int n)
 {
-    int length = collection.Length;
-    int index = 0;
-    while (index < length)
+    for (int i = 1; i <= n; i++)
     {
-        collection[index] = { 1, 4, 9, 16, 25, 36, 49, 64, 81, 100};
-        index++;
-    }
 
+        Console.Write($" {i * i}");
+    }
+    Console.WriteLine();
 }
 
-void PrintArray(int[] col)
-{
-    int count = col.Length;
-    int position = 0;
-    while (position < count)
-    {
-        Console.WriteLine(col[position]);
-        position++;
-    }
-}
-
-int IndexOF(int[] collection, int find)
-{
-    int count = collection.Length;
-    int index = 0;
-    int position = 1;
-    while (index < count)
-    {
-        if(collection[index] == find)
-        {
-            position = index;
-        }
-        index++;
-    }
-    return position;
-}
-
+Method(n);
 

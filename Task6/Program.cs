@@ -3,3 +3,16 @@
 // 5 -> 1, 8, 27, 64, 125
 // 3 -> 1, 8, 27 
 // 5 -> 1, 8, 27, 64, 125
+
+int n = 3;
+
+void Method1(int n)
+{
+    for (int i = 1; i < n + 1; i++)
+    {
+        Console.Write($" {i * i * i}");
+    }
+    Console.WriteLine();
+}
+
+Method1(n);
